@@ -1,0 +1,16 @@
+name: "DNS Lookup"
+description: "DNS Lookup Github Action, scans for A,MX,TXT,CNAME records"
+
+branding: 
+  icon: "server"
+  color: "orange"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+inputs:
+  domain:
+    description: "Target Domain Name"
+    required: true
+    default: "example.org"

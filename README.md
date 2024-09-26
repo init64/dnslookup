@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: init64/dnslookup@master
         with:
-          domain: "init64.org"
+          domain: "example.org"
 ```

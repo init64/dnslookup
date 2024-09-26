@@ -1,0 +1,16 @@
+name: Test dnslookup action
+
+on: 
+  workflow_dispatch:
+    inputs:
+      domain: 
+        description: Target Domain Name
+        required: false
+
+jobs:
+  nslookup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: init64/dnslookup@master
+        with:
+          domain: inputs.domain 

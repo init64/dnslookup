@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: init64/dnslookup@master
         with:
-          domain: {{ inputs.domain }} 
+          domain: ${{ inputs.domain }} 
